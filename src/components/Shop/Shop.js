@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Product from '../../Product/Product';
+import Cart from '../Cart/Cart';
 import './Shop.css'
 const Shop = () => {
+    const [cart, setCart] = useState([])
     const products = [
         {name:'vivo v19', 
         id:1, 
@@ -54,6 +56,12 @@ const Shop = () => {
         img:"https://qph.fs.quoracdn.net/main-qimg-f46afad22efc3c50301fab69327438f0-pjlq"
         }
     ]
+    const handelAddToCart = (product) =>{
+        
+        const newCart = [...cart, product]
+        setCart(newCart)
+        
+    }
     return (
         
         <div className='shop-container'>
@@ -63,14 +71,20 @@ const Shop = () => {
             {
                 products.map(product=><Product
                 product ={product}
+                key = {product.id}
+                handelAddToCart = {handelAddToCart}
                 ></Product>)
 
             }
             </div>
             </div>
             
-            <div>
-                <h1> this is the </h1>
+            <div className='cart-container'>
+                <div>
+                    <h3>Select phone</h3>
+                </div>
+               <Cart cart = {cart}></Cart>
+                
             </div>
            
         </div>
