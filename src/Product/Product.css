@@ -1,4 +1,25 @@
-
-.product-name{
-    font-size: 17px;
+.product-container img{
+    width: 350px;
+    height: 350px;
+    margin: 5px;
+    
+    
+}
+.product-container img:hover{
+    border: 2px solid rgb(200, 230, 33);
+    border-radius: 5px;
+}
+.product-container{
+    border: 2px solid rgb(132, 214, 108);
+    border-radius: 10px;
+}
+.phone-name{
+    font-size: 30px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.phone-price{
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 10px;
 }

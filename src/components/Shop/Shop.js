@@ -55,8 +55,11 @@ const Shop = () => {
         }
     ]
     return (
-        <div className='products'>
-            <div className='products-container ' >
+        
+        <div className='shop-container'>
+            <div className='phone-con-name'>
+            <h1>Choose your favorite vivo phone</h1>
+            <div className='products-container' >
             {
                 products.map(product=><Product
                 product ={product}
@@ -64,6 +67,8 @@ const Shop = () => {
 
             }
             </div>
+            </div>
+            
             <div>
                 <h1> this is the </h1>
             </div>
