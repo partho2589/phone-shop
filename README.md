@@ -1,4 +1,4 @@
 Phone Shop
 
- Live web site link (https://relaxed-cucurucho-4b91af.netlify.app/).
+ Live web site link (https://poetic-pothos-162e7a.netlify.app/).
 
