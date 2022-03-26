@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
+import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 
 import './Shop.css'
 const Shop = () => {
-   const [phones, setPhones ] = useState([]) 
-   const handelAddToCart = (name) =>{
-    console.log(name)
-}
+
     const products = [
-        {name:'vivo v19', 
+        {name:'vivo V19', 
         id:1, 
         price:23000, 
         img:"https://cmobileprice.com/products/Vivo_Y19.jpg"
@@ -59,7 +57,11 @@ const Shop = () => {
         img:"https://qph.fs.quoracdn.net/main-qimg-f46afad22efc3c50301fab69327438f0-pjlq"
         }
     ]
-   
+    const [cart, setCart] = useState([])
+    const addToCart =(product)=>{
+       const newCart = [...cart, product ]
+       setCart(newCart)
+    }
     return (
         
         <div className='shop-container'>
@@ -70,7 +72,7 @@ const Shop = () => {
                 products.map(product=><Product
                 product ={product}
                 key = {product.id}
-                handelAddToCart={handelAddToCart}
+                addToCart = {addToCart}
                 ></Product>)
 
             }
@@ -78,10 +80,24 @@ const Shop = () => {
             </div>
             
             <div className='cart-container'>
-                <div>
-                    <h3>Select phone</h3>
+                <div className='select-name'>
+                <h3>Selected phone</h3>
                 </div>
-               
+                <div>
+                    {
+                        cart.map(phone=>  <Cart
+                         phone ={phone}
+                         key={phone.id}
+                        ></Cart> )
+                    }
+                    
+                </div>
+                <div>
+                <button  className='select-btn'>
+                    Select phone
+                </button>
+                
+            </div>
                 
             </div>
            

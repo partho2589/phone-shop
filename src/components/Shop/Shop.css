@@ -1,6 +1,7 @@
 .shop-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
+    background-color: whitesmoke;
 }
 .phone-con-name{
     text-align: center;
@@ -15,8 +16,24 @@
     
 }
 .cart-container{
-    background-color: rgb(141, 245, 184);
+    background-color: rgb(247, 221, 135);
     margin: 20px;
     border-radius:12px;
     height: 400px;
+    text-align: center;
+}
+.select-btn{
+    border-radius: 20px;
+    color: rgb(16, 12, 27);
+    font-size: 20px;
+    background-color: rgb(70, 248, 150);
+    border: 0;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    
+}
+.select-name{
+    margin-top: 20px;
 }
