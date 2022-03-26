@@ -20,7 +20,7 @@
     background-color: rgb(247, 221, 135);
     margin: 20px;
     border-radius:12px;
-    height: 400px;
+ 
     text-align: center;
 }
 .select-btn{
@@ -37,4 +37,10 @@
 }
 .select-name{
     margin-top: 20px;
+  
+}
+@media screen and (max-width:540px) {
+    .products-container{
+        grid-template-columns: auto;
+    }
 }

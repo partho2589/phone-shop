@@ -1,4 +1,4 @@
 Phone Shop
 
- Live web site link (https://github.com/facebook/create-react-app).
+ Live web site link (https://relaxed-cucurucho-4b91af.netlify.app/).
 

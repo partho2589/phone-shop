@@ -4,7 +4,7 @@ import Product from '../Product/Product';
 
 import './Shop.css'
 const Shop = () => {
-
+    
     const products = [
         {name:'vivo V19', 
         id:1, 
@@ -61,7 +61,9 @@ const Shop = () => {
     const addToCart =(product)=>{
        const newCart = [...cart, product ]
        setCart(newCart)
+    
     }
+    
     return (
         
         <div className='shop-container'>
@@ -92,11 +94,14 @@ const Shop = () => {
                     }
                     
                 </div>
+
+
+
                 <div>
-                <button  className='select-btn'>
-                    Select phone
+                <button className='select-btn'>
+                    CHOOSE 1 FOR ME 
                 </button>
-                
+                <button className='select-btn'> CHO0SE AGAIN </button>
             </div>
                 
             </div>
