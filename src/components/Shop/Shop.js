@@ -57,8 +57,7 @@ const Shop = () => {
         }
     ]
     const handelAddToCart = (product) =>{
-        
-        const newCart = [...cart, product]
+        const newCart = [...cart, product];
         setCart(newCart)
         
     }
@@ -83,7 +82,7 @@ const Shop = () => {
                 <div>
                     <h3>Select phone</h3>
                 </div>
-               <Cart cart = {cart}></Cart>
+               <Cart cart= {cart}></Cart>
                 
             </div>
            
