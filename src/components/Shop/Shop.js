@@ -61,7 +61,7 @@ const Shop = () => {
     const addToCart =(product)=>{
        const newCart = [...cart, product ]
        setCart(newCart)
-    
+     
     }
     
     return (
